@@ -38,10 +38,10 @@ int main()
     int a;
     int p = 2;
     std::vector<int> nums = {};
-    for (int i = 0; i < N-2; i++) {
-        nums[i] = i+2;
+    for (int i = 0; i <= N-2; i++) {
+        nums.push_back(i+2);
     }
-    std::cout << "Введите число: ";
+    std::cout << "Введите число от 2 до 50: ";
     std::cin >> a;
     std::vector<int> res = prost(nums, p);
     std::cout << answ(res, a);
