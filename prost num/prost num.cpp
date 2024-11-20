@@ -44,6 +44,11 @@ int main()
     std::cout << "Введите число от 2 до 50: ";
     std::cin >> a;
     std::vector<int> res = prost(nums, p);
-    std::cout << answ(res, a);
+    if (answ(res, a)) {
+        std::cout << "Простое";
+    }
+    else {
+        std::cout << "Не простое";
+    }
 }
 
