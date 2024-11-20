@@ -12,7 +12,7 @@ int main()
     std::cout << "Введите радиус: ";
     std::cin >> r;
     double v = p*pow(r,2)*h;
-    double s = p * pow(r, 2);
+    double s = 2 * p * pow(r, 2) + 2 * p * r * h;
     std::cout << "Объем кружки: " << v<<std::endl;
     std::cout << "Площадь поверхности: " << s;
 }
