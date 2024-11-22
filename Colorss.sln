@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "agge", "agge\agge.vcxproj",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chetverti", "chetverti\chetverti.vcxproj", "{38F5B9BE-DEA4-4E66-AC7F-6C3A294751ED}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "switchcase", "switchcase\switchcase.vcxproj", "{0017AC09-64DA-4584-BD50-F41F9E3B4FCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{38F5B9BE-DEA4-4E66-AC7F-6C3A294751ED}.Release|x64.Build.0 = Release|x64
 		{38F5B9BE-DEA4-4E66-AC7F-6C3A294751ED}.Release|x86.ActiveCfg = Release|Win32
 		{38F5B9BE-DEA4-4E66-AC7F-6C3A294751ED}.Release|x86.Build.0 = Release|Win32
+		{0017AC09-64DA-4584-BD50-F41F9E3B4FCB}.Debug|x64.ActiveCfg = Debug|x64
+		{0017AC09-64DA-4584-BD50-F41F9E3B4FCB}.Debug|x64.Build.0 = Debug|x64
+		{0017AC09-64DA-4584-BD50-F41F9E3B4FCB}.Debug|x86.ActiveCfg = Debug|Win32
+		{0017AC09-64DA-4584-BD50-F41F9E3B4FCB}.Debug|x86.Build.0 = Debug|Win32
+		{0017AC09-64DA-4584-BD50-F41F9E3B4FCB}.Release|x64.ActiveCfg = Release|x64
+		{0017AC09-64DA-4584-BD50-F41F9E3B4FCB}.Release|x64.Build.0 = Release|x64
+		{0017AC09-64DA-4584-BD50-F41F9E3B4FCB}.Release|x86.ActiveCfg = Release|Win32
+		{0017AC09-64DA-4584-BD50-F41F9E3B4FCB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
