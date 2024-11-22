@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "prost num", "prost num\pros
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "count sochet", "count sochet\count sochet.vcxproj", "{7431C16F-47EC-41A7-83A0-ADBC687DD428}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nazelo", "nazelo\nazelo.vcxproj", "{20B1ECA2-7D10-4EC2-8AE4-8ACF573B8970}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{7431C16F-47EC-41A7-83A0-ADBC687DD428}.Release|x64.Build.0 = Release|x64
 		{7431C16F-47EC-41A7-83A0-ADBC687DD428}.Release|x86.ActiveCfg = Release|Win32
 		{7431C16F-47EC-41A7-83A0-ADBC687DD428}.Release|x86.Build.0 = Release|Win32
+		{20B1ECA2-7D10-4EC2-8AE4-8ACF573B8970}.Debug|x64.ActiveCfg = Debug|x64
+		{20B1ECA2-7D10-4EC2-8AE4-8ACF573B8970}.Debug|x64.Build.0 = Debug|x64
+		{20B1ECA2-7D10-4EC2-8AE4-8ACF573B8970}.Debug|x86.ActiveCfg = Debug|Win32
+		{20B1ECA2-7D10-4EC2-8AE4-8ACF573B8970}.Debug|x86.Build.0 = Debug|Win32
+		{20B1ECA2-7D10-4EC2-8AE4-8ACF573B8970}.Release|x64.ActiveCfg = Release|x64
+		{20B1ECA2-7D10-4EC2-8AE4-8ACF573B8970}.Release|x64.Build.0 = Release|x64
+		{20B1ECA2-7D10-4EC2-8AE4-8ACF573B8970}.Release|x86.ActiveCfg = Release|Win32
+		{20B1ECA2-7D10-4EC2-8AE4-8ACF573B8970}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
