@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nazelo", "nazelo\nazelo.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "agge", "agge\agge.vcxproj", "{DC94C74E-97BC-43DA-AAF7-9E4762506D48}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chetverti", "chetverti\chetverti.vcxproj", "{38F5B9BE-DEA4-4E66-AC7F-6C3A294751ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{DC94C74E-97BC-43DA-AAF7-9E4762506D48}.Release|x64.Build.0 = Release|x64
 		{DC94C74E-97BC-43DA-AAF7-9E4762506D48}.Release|x86.ActiveCfg = Release|Win32
 		{DC94C74E-97BC-43DA-AAF7-9E4762506D48}.Release|x86.Build.0 = Release|Win32
+		{38F5B9BE-DEA4-4E66-AC7F-6C3A294751ED}.Debug|x64.ActiveCfg = Debug|x64
+		{38F5B9BE-DEA4-4E66-AC7F-6C3A294751ED}.Debug|x64.Build.0 = Debug|x64
+		{38F5B9BE-DEA4-4E66-AC7F-6C3A294751ED}.Debug|x86.ActiveCfg = Debug|Win32
+		{38F5B9BE-DEA4-4E66-AC7F-6C3A294751ED}.Debug|x86.Build.0 = Debug|Win32
+		{38F5B9BE-DEA4-4E66-AC7F-6C3A294751ED}.Release|x64.ActiveCfg = Release|x64
+		{38F5B9BE-DEA4-4E66-AC7F-6C3A294751ED}.Release|x64.Build.0 = Release|x64
+		{38F5B9BE-DEA4-4E66-AC7F-6C3A294751ED}.Release|x86.ActiveCfg = Release|Win32
+		{38F5B9BE-DEA4-4E66-AC7F-6C3A294751ED}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
