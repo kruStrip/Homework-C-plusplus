@@ -24,4 +24,3 @@ int main()
 
     std::cout << sum_progress(q, b_0, n);
 }
-
