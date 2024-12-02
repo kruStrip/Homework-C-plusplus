@@ -1,12 +1,18 @@
 ﻿#include <iostream>
 
-double sum_progress(double q, double b_0, int n) {
+void sum_progress(double q, double b_0) {
     double sum = b_0;
-    for (int i = 1; i < n; i++) {
+    double check = b_0 / (1 - q);
+    for (int i = 1; i < 150; i++) {
         b_0 = b_0 * q;
         sum += b_0;
     }
-    return sum;
+    if (sum <= check) {
+        std::cout << "Сумма г.прогресси при n = 150, равна " << sum << " и стремится к " << check << " /чтд";
+  }
+    else {
+        std::cout << "Теорема лжива";
+    }
 }
 
 int main()
@@ -19,8 +25,5 @@ int main()
     std::cin >> q;
     std::cout << "Введите b0: ";
     std::cin >> b_0;
-    std::cout << "Введите n: ";
-    std::cin >> n;
-
-    std::cout << sum_progress(q, b_0, n);
+    sum_progress(q, b_0);
 }
