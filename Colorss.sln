@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "progress", "progress\progre
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dokazano", "dokazano\dokazano.vcxproj", "{8590A7CE-C322-40BB-96D3-65B7797DEED1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "integral", "integral\integral.vcxproj", "{3AC3840A-839D-44E6-8D8F-09F89C69D930}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{8590A7CE-C322-40BB-96D3-65B7797DEED1}.Release|x64.Build.0 = Release|x64
 		{8590A7CE-C322-40BB-96D3-65B7797DEED1}.Release|x86.ActiveCfg = Release|Win32
 		{8590A7CE-C322-40BB-96D3-65B7797DEED1}.Release|x86.Build.0 = Release|Win32
+		{3AC3840A-839D-44E6-8D8F-09F89C69D930}.Debug|x64.ActiveCfg = Debug|x64
+		{3AC3840A-839D-44E6-8D8F-09F89C69D930}.Debug|x64.Build.0 = Debug|x64
+		{3AC3840A-839D-44E6-8D8F-09F89C69D930}.Debug|x86.ActiveCfg = Debug|Win32
+		{3AC3840A-839D-44E6-8D8F-09F89C69D930}.Debug|x86.Build.0 = Debug|Win32
+		{3AC3840A-839D-44E6-8D8F-09F89C69D930}.Release|x64.ActiveCfg = Release|x64
+		{3AC3840A-839D-44E6-8D8F-09F89C69D930}.Release|x64.Build.0 = Release|x64
+		{3AC3840A-839D-44E6-8D8F-09F89C69D930}.Release|x86.ActiveCfg = Release|Win32
+		{3AC3840A-839D-44E6-8D8F-09F89C69D930}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
