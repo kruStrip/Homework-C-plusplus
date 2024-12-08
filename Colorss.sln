@@ -29,6 +29,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "integral", "integral\integr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "log2", "log2\log2.vcxproj", "{4F92088B-3C62-4DC6-A5BF-2A37CA0B55CB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "massiv", "massiv\massiv.vcxproj", "{3D9EF7FD-9424-4082-82C1-6E1A525E0809}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -141,6 +143,14 @@ Global
 		{4F92088B-3C62-4DC6-A5BF-2A37CA0B55CB}.Release|x64.Build.0 = Release|x64
 		{4F92088B-3C62-4DC6-A5BF-2A37CA0B55CB}.Release|x86.ActiveCfg = Release|Win32
 		{4F92088B-3C62-4DC6-A5BF-2A37CA0B55CB}.Release|x86.Build.0 = Release|Win32
+		{3D9EF7FD-9424-4082-82C1-6E1A525E0809}.Debug|x64.ActiveCfg = Debug|x64
+		{3D9EF7FD-9424-4082-82C1-6E1A525E0809}.Debug|x64.Build.0 = Debug|x64
+		{3D9EF7FD-9424-4082-82C1-6E1A525E0809}.Debug|x86.ActiveCfg = Debug|Win32
+		{3D9EF7FD-9424-4082-82C1-6E1A525E0809}.Debug|x86.Build.0 = Debug|Win32
+		{3D9EF7FD-9424-4082-82C1-6E1A525E0809}.Release|x64.ActiveCfg = Release|x64
+		{3D9EF7FD-9424-4082-82C1-6E1A525E0809}.Release|x64.Build.0 = Release|x64
+		{3D9EF7FD-9424-4082-82C1-6E1A525E0809}.Release|x86.ActiveCfg = Release|Win32
+		{3D9EF7FD-9424-4082-82C1-6E1A525E0809}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
