@@ -54,7 +54,6 @@ void median(int nums[], int size) {
     for (int i = ((size / 2)+1); i < size; i++) {
         std::cout << nums[i] << " ";
     }
-    std::cout << "\n";
 }
 
 
@@ -85,6 +84,6 @@ int main()
     std::cout << "Среднее арифметическое: " << res_avg(nums) << "\n";
     std::cout << "Среднее: " << sredn(nums) << "\n";
     median(nums, size);
-    std::cout << "Мода: " << moda(nums) << "\n";
+    std::cout << "\nМода: " << moda(nums) << "\n";
 }
 
