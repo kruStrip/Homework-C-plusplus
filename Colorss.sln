@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "koren2", "koren2\koren2.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sravnenie strok", "sravnenie strok\sravnenie strok.vcxproj", "{59659F1F-03F2-484E-87C5-EB95D16C94CE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "proverla email", "proverla email\proverla email.vcxproj", "{B641012D-6439-4AC1-8F07-4D79D1154EFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -211,6 +213,14 @@ Global
 		{59659F1F-03F2-484E-87C5-EB95D16C94CE}.Release|x64.Build.0 = Release|x64
 		{59659F1F-03F2-484E-87C5-EB95D16C94CE}.Release|x86.ActiveCfg = Release|Win32
 		{59659F1F-03F2-484E-87C5-EB95D16C94CE}.Release|x86.Build.0 = Release|Win32
+		{B641012D-6439-4AC1-8F07-4D79D1154EFF}.Debug|x64.ActiveCfg = Debug|x64
+		{B641012D-6439-4AC1-8F07-4D79D1154EFF}.Debug|x64.Build.0 = Debug|x64
+		{B641012D-6439-4AC1-8F07-4D79D1154EFF}.Debug|x86.ActiveCfg = Debug|Win32
+		{B641012D-6439-4AC1-8F07-4D79D1154EFF}.Debug|x86.Build.0 = Debug|Win32
+		{B641012D-6439-4AC1-8F07-4D79D1154EFF}.Release|x64.ActiveCfg = Release|x64
+		{B641012D-6439-4AC1-8F07-4D79D1154EFF}.Release|x64.Build.0 = Release|x64
+		{B641012D-6439-4AC1-8F07-4D79D1154EFF}.Release|x86.ActiveCfg = Release|Win32
+		{B641012D-6439-4AC1-8F07-4D79D1154EFF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
