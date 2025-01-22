@@ -22,7 +22,6 @@ std::vector<double> roots(double (*func)(double), double a, double b, double ste
     return res;
 }
 
-// Пример функции
 double gen_func(double x) {
     return 0.2 * x * sin(x) - 1.0 / x;
 }
