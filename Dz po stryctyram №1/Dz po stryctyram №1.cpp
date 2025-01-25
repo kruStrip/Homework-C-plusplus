@@ -1,9 +1,13 @@
 ﻿#include <iostream>
-#include <vector>
 #include <cmath>
 
-void equal(std::vector<int> points1, std::vector<int> points2) {
-    if ((points1[0] == points2[0]) && (points1[1] == points2[1])) {
+struct Vector {
+    double x;
+    double y;
+};
+
+void equal(Vector point1, Vector point2) {
+    if ((point1.x == point2.x) && (point1.y == point2.y)) {
         std::cout << "Две точки являются одинаковыми.\n";
     }
     else {
@@ -11,41 +15,50 @@ void equal(std::vector<int> points1, std::vector<int> points2) {
     }
 }
 
-void distance(std::vector<int> points1, std::vector<int> points2) {
-    double xs = points2[0] - points1[0];
+void distance(Vector point1, Vector point2) {
+    double xs = point2.x - point1.x;
     xs = pow(xs, 2);
-    double ys = points2[1] - points1[1];
+    double ys = point2.y - point1.y;
     ys = pow(ys, 2);
     double dist = sqrt(xs + ys);
 
     std::cout << "Расстояние между двумя точками: " << dist << std::endl;
 }
 
-void angle(std::vector<int> points1, std::vector<int> points2, std::vector<int> common) {
-    double x1 = points2[0] - points1[0];
-    double y1 = points2[1] - points1[1];
-    double x2 = common[0] - points1[0];
-    double y2 = common[1] - points1[1];
+void angle(Vector point1, Vector point2, Vector common_point) {
+    double x1 = point2.x - point1.x;
+    double y1 = point2.y - point1.y;
+    double x2 = common_point.x - point1.x;
+    double y2 = common_point.y - point1.y;
 
     double scal = x1 * x2 + y1 * y2;
     double dlina1 = sqrt(x1 * x1 + y1 * y1);
     double dlina2 = sqrt(x2 * x2 + y2 * y2);
-    double cos = scal / (dlina1 * dlina2);
 
+    if (dlina1 == 0 || dlina2 == 0) {
+        std::cout << "Длина одного из векторов равна 0\n";
+        return;
+    }
+
+    double cos = scal / (dlina1 * dlina2);
     double ygol = acos(cos) * 180 / 3.14;
     std::cout << "Угол между векторами: " << ygol << " градусов.\n";
 }
 
-void normalize(std::vector<int> point) {
-    double vel = sqrt(point[0] * point[0] + point[1] * point[1]);
-    std::vector<double> normal = { point[0] / vel, point[1] / vel };
+void normalize(Vector point) {
+    double vel = sqrt(point.x * point.x + point.y * point.y);
+    if (vel == 0) {
+        std::cout << "Невозможно нормализовать нулевой вектор.\n";
+        return;
+    }
 
-    std::cout << "Нормализованный вектор: " << normal[0] << ", " << normal[1] << "\n";
+    Vector normal = { point.x / vel, point.y / vel };
+    std::cout << "Нормализованный вектор: " << normal.x << ", " << normal.y << "\n";
 }
 
-void rotate90(std::vector<int> point, bool napr) {
-    int x = point[0];
-    int y = point[1];
+void rotate90(Vector point, bool napr) {
+    int x = point.x;
+    int y = point.y;
 
     if (napr) {
         std::cout << "Вектор после поворота на 90 градусов по часовой стрелке: " << y << ", " << -x << "\n";
@@ -55,11 +68,11 @@ void rotate90(std::vector<int> point, bool napr) {
     }
 }
 
-void collinear(std::vector<int> points1, std::vector<int> points2, std::vector<int> common) {
-    int x1 = points2[0] - points1[0];
-    int y1 = points2[1] - points1[1];
-    int x2 = common[0] - points1[0];
-    int y2 = common[1] - points1[1];
+void collinear(Vector point1, Vector point2, Vector common_point) {
+    int x1 = point2.x - point1.x;
+    int y1 = point2.y - point1.y;
+    int x2 = common_point.x - point1.x;
+    int y2 = common_point.y - point1.y;
 
     int check = x1 * y2 - y1 * x2;
     if (check == 0) {
@@ -72,32 +85,33 @@ void collinear(std::vector<int> points1, std::vector<int> points2, std::vector<i
 
 int main() {
     setlocale(0, "");
-    std::vector<int> points1(2);
-    std::vector<int> points2(2);
-    std::vector<int> common(2);
+    Vector point1;
+    Vector point2;
+    Vector common_point;
 
     std::cout << "Введите x 1-й точки: ";
-    std::cin >> points1[0];
+    std::cin >> point1.x;
     std::cout << "Введите y 1-й точки: ";
-    std::cin >> points1[1];
+    std::cin >> point1.y;
 
     std::cout << "Введите x 2-й точки: ";
-    std::cin >> points2[0];
+    std::cin >> point2.x;
     std::cout << "Введите y 2-й точки: ";
-    std::cin >> points2[1];
+    std::cin >> point2.y;
 
     std::cout << "Введите x общей точки: ";
-    std::cin >> common[0];
+    std::cin >> common_point.x;
     std::cout << "Введите y общей точки: ";
-    std::cin >> common[1];
+    std::cin >> common_point.y;
 
     std::cout << "\n";
-    equal(points1, points2);
-    distance(points1, points2);
-    angle(points1, points2, common);
-    normalize(points1);
-    rotate90(points1, true);
-    rotate90(points1, false);
-    collinear(points1, points2, common);
+    equal(point1, point2);
+    distance(point1, point2);
+    angle(point1, point2, common_point);
+    normalize(point1);
+    rotate90(point1, true);
+    rotate90(point1, false);
+    collinear(point1, point2, common_point);
 }
+
 
