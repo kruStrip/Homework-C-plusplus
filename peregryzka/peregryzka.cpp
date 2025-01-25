@@ -42,8 +42,8 @@ struct Fraction {
     }
 };
 
-long double operator"" _oz(long double ounces) {
-    return ounces * 28.41;
+long double operator""_oz(long double ml) {
+    return ml * 28.41;
 }
 
 int main() {
