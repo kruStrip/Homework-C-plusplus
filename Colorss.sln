@@ -61,7 +61,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dz po stryctyram №3", "Dz
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "remove", "remove\remove.vcxproj", "{67319D18-EC60-47BF-83D7-70C32BC4C665}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "experement", "experement\experement.vcxproj", "{25CC82B1-392B-480C-9B47-6E0B4A54D69F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "experement 1", "experement\experement.vcxproj", "{25CC82B1-392B-480C-9B47-6E0B4A54D69F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "experement 2", "experement 2\experement 2.vcxproj", "{C46514A6-7F46-41FC-88AD-107F8EFD4D50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -311,6 +313,14 @@ Global
 		{25CC82B1-392B-480C-9B47-6E0B4A54D69F}.Release|x64.Build.0 = Release|x64
 		{25CC82B1-392B-480C-9B47-6E0B4A54D69F}.Release|x86.ActiveCfg = Release|Win32
 		{25CC82B1-392B-480C-9B47-6E0B4A54D69F}.Release|x86.Build.0 = Release|Win32
+		{C46514A6-7F46-41FC-88AD-107F8EFD4D50}.Debug|x64.ActiveCfg = Debug|x64
+		{C46514A6-7F46-41FC-88AD-107F8EFD4D50}.Debug|x64.Build.0 = Debug|x64
+		{C46514A6-7F46-41FC-88AD-107F8EFD4D50}.Debug|x86.ActiveCfg = Debug|Win32
+		{C46514A6-7F46-41FC-88AD-107F8EFD4D50}.Debug|x86.Build.0 = Debug|Win32
+		{C46514A6-7F46-41FC-88AD-107F8EFD4D50}.Release|x64.ActiveCfg = Release|x64
+		{C46514A6-7F46-41FC-88AD-107F8EFD4D50}.Release|x64.Build.0 = Release|x64
+		{C46514A6-7F46-41FC-88AD-107F8EFD4D50}.Release|x86.ActiveCfg = Release|Win32
+		{C46514A6-7F46-41FC-88AD-107F8EFD4D50}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
