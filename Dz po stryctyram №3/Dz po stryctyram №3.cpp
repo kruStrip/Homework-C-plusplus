@@ -1,5 +1,11 @@
 ﻿#include <iostream>
 
+struct Iskl {
+    std::string mess;
+
+    Iskl(const std::string& msg) : mess(msg) {}
+};
+
 struct String {
     char* str;
     size_t size;
@@ -63,7 +69,7 @@ struct String {
 
     char at(size_t ind) {
         if (ind >= size) {
-            std::cout<<"Ошибка";
+            throw Iskl("Ошибка, индекс выходит за пределы");
             return 0;
         }
         return str[ind];
@@ -71,7 +77,7 @@ struct String {
 
     String substring(size_t start, size_t len) {
         if (start >= size || start + len > size) {
-            std::cout << "Ошибка";
+            throw Iskl("Ошибка, индекс выходит за пределы");
             return 0;
         }
         char* subStr = new char[len + 1];
@@ -88,7 +94,7 @@ struct String {
                 return i;
             }
         }
-        return -1;
+        throw Iskl("Ошибка, символ не найден");
     }
 
     int last(char ch) {
@@ -97,7 +103,7 @@ struct String {
                 return i;
             }
         }
-        return -1;
+        throw Iskl("Ошибка, символ не найден");
     }
 
     void split(char delim) const {
@@ -167,19 +173,35 @@ int main() {
     a.prepend("meow ");
     std::cout << "После prepend: " << a.str << "\n";
 
-    std::cout << "Символ на позиции 2: " << a.at(2) << "\n";
+    try {
+        std::cout << "Символ на позиции 2: " << a.at(2) << "\n";
+    }
+    catch (const Iskl& i) {
+        std::cerr << i.mess << std::endl;
+    }
 
     String sub = a.substring(4, 5);
     std::cout << "Подстрока: " << sub.str << "\n";
-
-    std::cout << "Первое вхождение 'l': " << a.first('l') << "\n";
-    std::cout << "Последнее вхождение 'l': " << a.last('l') << "\n";
+    try {
+        std::cout << "Первое вхождение 'l': " << a.first('l') << "\n";
+    }
+    catch (const Iskl& i) {
+        std::cerr << i.mess << std::endl;
+    }
+    try {
+        std::cout << "Последнее вхождение 'l': " << a.last('l') << "\n";
+    }
+    catch (const Iskl& i) {
+        std::cerr << i.mess << std::endl;
+    }
 
     std::cout << "Split по пробелу\n";
     a.split(' ');
 
     a.replace("World", "meow");
     std::cout << "После replace: " << a.str << "\n";
+
+    return 0;
 }
 
 
