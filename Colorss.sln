@@ -55,6 +55,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DZ po ykazatelyam №4", "D
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dz po stryctyram №1", "Dz po stryctyram №1\Dz po stryctyram №1.vcxproj", "{FA8562B8-03B4-4241-AA09-826749F35225}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Dz po stryctyram №2", "Dz po stryctyram №2\Dz po stryctyram №2.vcxproj", "{745423C8-AFAB-4F64-983B-B8C7D4DB6BCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -271,6 +273,14 @@ Global
 		{FA8562B8-03B4-4241-AA09-826749F35225}.Release|x64.Build.0 = Release|x64
 		{FA8562B8-03B4-4241-AA09-826749F35225}.Release|x86.ActiveCfg = Release|Win32
 		{FA8562B8-03B4-4241-AA09-826749F35225}.Release|x86.Build.0 = Release|Win32
+		{745423C8-AFAB-4F64-983B-B8C7D4DB6BCF}.Debug|x64.ActiveCfg = Debug|x64
+		{745423C8-AFAB-4F64-983B-B8C7D4DB6BCF}.Debug|x64.Build.0 = Debug|x64
+		{745423C8-AFAB-4F64-983B-B8C7D4DB6BCF}.Debug|x86.ActiveCfg = Debug|Win32
+		{745423C8-AFAB-4F64-983B-B8C7D4DB6BCF}.Debug|x86.Build.0 = Debug|Win32
+		{745423C8-AFAB-4F64-983B-B8C7D4DB6BCF}.Release|x64.ActiveCfg = Release|x64
+		{745423C8-AFAB-4F64-983B-B8C7D4DB6BCF}.Release|x64.Build.0 = Release|x64
+		{745423C8-AFAB-4F64-983B-B8C7D4DB6BCF}.Release|x86.ActiveCfg = Release|Win32
+		{745423C8-AFAB-4F64-983B-B8C7D4DB6BCF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
