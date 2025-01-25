@@ -174,5 +174,4 @@ int main()
     set.print();
     std::cout << std::endl;
 
-    return 0;
 }

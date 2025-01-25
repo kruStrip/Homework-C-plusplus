@@ -144,7 +144,5 @@ int main() {
     circ.input();
     std::cout << "Площадь круга: " << circ.area() << "\n";
     std::cout << "Периметр круга: " << circ.perim() << "\n";
-
-    return 0;
 }
 

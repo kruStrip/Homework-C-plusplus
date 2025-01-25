@@ -180,8 +180,6 @@ int main() {
 
     a.replace("World", "meow");
     std::cout << "После replace: " << a.str << "\n";
-
-    return 0;
 }
 
 
