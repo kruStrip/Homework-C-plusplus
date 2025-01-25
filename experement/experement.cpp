@@ -17,7 +17,7 @@ void vector() {
     }
     clock_t end = clock();
     double time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
-    std::cout << "Время нахождения элемента: " << time << " сек\n";
+    std::cout << "Время нахождения элемента в vector: " << time << " сек\n";
 }
 
 void list() {
@@ -33,7 +33,7 @@ void list() {
     }
     clock_t end = clock();
     double time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
-    std::cout << "Время нахождения элемента: " << time << " сек\n";
+    std::cout << "Время нахождения элемента в list: " << time << " сек\n";
 }
 
 void set() {
@@ -49,7 +49,7 @@ void set() {
     }
     clock_t end = clock();
     double time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
-    std::cout << "Время нахождения элемента: " << time << " сек\n";
+    std::cout << "Время нахождения элемента в set: " << time << " сек\n";
 }
 
 void unorderedSet() {
@@ -65,7 +65,7 @@ void unorderedSet() {
     }
     clock_t end = clock();
     double time = static_cast<double>(end - start) / CLOCKS_PER_SEC;
-    std::cout << "Время нахождения элемента: " << time << " сек\n";
+    std::cout << "Время нахождения элемента в unorderedSet: " << time << " сек\n";
 }
 
 int main() {
