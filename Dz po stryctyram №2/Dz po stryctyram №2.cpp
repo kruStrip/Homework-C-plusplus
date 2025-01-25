@@ -87,9 +87,9 @@ struct Triangle {
 
     double perim() {
         if (!check()) return 0;
-        double a = std::hypot(p2.x - p1.x, p2.y - p1.y);
-        double b = std::hypot(p3.x - p2.x, p3.y - p2.y);
-        double c = std::hypot(p1.x - p3.x, p1.y - p3.y);
+        double a = std::sqrt(std::pow(p2.x - p1.x, 2) + std::pow(p2.y - p1.y, 2));
+        double b = std::sqrt(std::pow(p3.x - p2.x, 2) + std::pow(p3.y - p2.y, 2));
+        double c = std::sqrt(std::pow(p1.x - p3.x, 2) + std::pow(p1.y - p3.y, 2));
         return a + b + c;
     }
 };
