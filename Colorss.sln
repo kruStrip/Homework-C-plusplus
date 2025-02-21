@@ -67,6 +67,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "experement 2", "experement 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "peregryzka", "peregryzka\peregryzka.vcxproj", "{A9970F3E-3604-4E18-BC08-0384E11D207C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Car", "Car\Car.vcxproj", "{0229611B-ADF6-45CF-A3C0-FEA51A753CFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -331,6 +333,14 @@ Global
 		{A9970F3E-3604-4E18-BC08-0384E11D207C}.Release|x64.Build.0 = Release|x64
 		{A9970F3E-3604-4E18-BC08-0384E11D207C}.Release|x86.ActiveCfg = Release|Win32
 		{A9970F3E-3604-4E18-BC08-0384E11D207C}.Release|x86.Build.0 = Release|Win32
+		{0229611B-ADF6-45CF-A3C0-FEA51A753CFE}.Debug|x64.ActiveCfg = Debug|x64
+		{0229611B-ADF6-45CF-A3C0-FEA51A753CFE}.Debug|x64.Build.0 = Debug|x64
+		{0229611B-ADF6-45CF-A3C0-FEA51A753CFE}.Debug|x86.ActiveCfg = Debug|Win32
+		{0229611B-ADF6-45CF-A3C0-FEA51A753CFE}.Debug|x86.Build.0 = Debug|Win32
+		{0229611B-ADF6-45CF-A3C0-FEA51A753CFE}.Release|x64.ActiveCfg = Release|x64
+		{0229611B-ADF6-45CF-A3C0-FEA51A753CFE}.Release|x64.Build.0 = Release|x64
+		{0229611B-ADF6-45CF-A3C0-FEA51A753CFE}.Release|x86.ActiveCfg = Release|Win32
+		{0229611B-ADF6-45CF-A3C0-FEA51A753CFE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
