@@ -4,8 +4,7 @@
 int main()
 {
 	setlocale(0, "");
-	Car car1;
-	Car car2;
+	Car car;
 	int var = 0;
 	double ml;
 	std::string cl;
@@ -20,18 +19,17 @@ int main()
 		std::cin >> var;
 		switch (var) {
 		case 1:
-			car1.info();
+			car.info();
 			break;
 		case 2:
-
 			std::cout << "Введите цвет: ";
 			std::cin >> cl;
-			car1.change_color(cl);
+			car.change_color(cl);
 			break;
 		case 3:
 			std::cout << "Введите пробег: ";
 			std::cin >> ml;
-			car1.change_mileage(ml);
+			car.change_mileage(ml);
 			break;
 		default:
 			std::cout << "Неверный ввод";
