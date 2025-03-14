@@ -26,18 +26,13 @@ public:
     {}
 
     void move() override {
-        std::cout << distance_passed + distance << std::endl;
+        std::cout << "Передвинулся на: " << distance_passed + distance << std::endl;
     }
-    void get_distance() const {
+    void get_distance() {
         std::cout << "Расстояние: " << distance << std::endl;
     }
-    void print(){ printInf(this) }
-
-    struct VTable {
-        void(*print)(LandVehicle);
-
-        VTable(void(*method)(LandVehicle*) = printInf) : print(method){}
-    };
+    virtual void print() {}
+    virtual std::string get_name() { return ""; }
 };
 
 class Car : public LandVehicle{
@@ -59,17 +54,13 @@ public:
 
     ~Car() = default;
 
-    void print() {
+    void print() override {
         std::cout << "Транспорт - машина, марка: " << mark << std::endl;
     }
 
-    /*
-    void move() override {
-        std::cout << distance_passed + distance << std::endl;
+    std::string get_name() override {
+        return mark;
     }
-    void distance() const {
-        std::cout << "Расстояние: " << distance << std::endl;
-    }*/
 };
 
 class Truck : public Car {
@@ -90,15 +81,11 @@ public:
 
     ~Truck() = default;
 
-    void move() override {
-        std::cout << distance_passed + distance << std::endl;
+    void print() override {
+        std::cout << "Транспорт - грузовик, марка: " << type << std::endl;
     }
-    void get_distance() const {
-        std::cout << "Расстояние: " << distance << std::endl;
-    }
-
-    void print() {
-        std::cout << "Транспорт - машина, тип: " << type << std::endl;
+    std::string get_name() override {
+        return type;
     }
 };
 
@@ -109,7 +96,10 @@ public:
     Motorcycle(Motorcycle const& other): LandVehicle(), name(other.name){}
     ~Motorcycle() = default;
 
-    void print() {
-        std::cout << "Транспорт - велосипед, марка: " << name << std::endl;
+    void print() override { 
+        std::cout << "Транспорт - мотоцикл, марка: " << name << std::endl;
+    }
+    std::string get_name() override {
+        return name;
     }
 };
