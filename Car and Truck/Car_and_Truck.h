@@ -5,6 +5,8 @@
 
 class Packege {
 public:
+    ~Packege() = default;
+private:
     std::string name;
     double weight_kg;
 
@@ -14,11 +16,10 @@ public:
     Packege(Packege const& other)
         : name(other.name), weight_kg(other.weight_kg) {}
 
-    ~Packege() = default;
-
     void info() const {
         std::cout << name << ", вес: " << weight_kg << "кг\n";
     }
+    friend class Truck;
 };
 
 class Car {
